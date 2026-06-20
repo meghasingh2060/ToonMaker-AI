@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ToonMaker AI</title>
 
-<style>
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ToonMaker AI</title><style>
 *{
 margin:0;
 padding:0;
@@ -13,62 +12,61 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#0f172a;
+background:#0b1020;
 color:white;
 }
 
 nav{
 display:flex;
 justify-content:space-between;
-align-items:center;
-padding:20px 40px;
-background:#111827;
-position:sticky;
-top:0;
+padding:20px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
 }
 
 .logo{
 font-size:28px;
 font-weight:bold;
+color:#7c4dff;
 }
 
 .hero{
 text-align:center;
-padding:100px 20px;
-background:linear-gradient(135deg,#4338ca,#2563eb);
+padding:80px 20px;
 }
 
 .hero h1{
-font-size:50px;
-margin-bottom:15px;
+font-size:48px;
+margin-bottom:20px;
 }
 
 .hero p{
-font-size:20px;
+font-size:18px;
+color:#cccccc;
 margin-bottom:30px;
 }
 
 .btn{
-background:white;
-color:#2563eb;
+background:#7c4dff;
 padding:15px 35px;
 border:none;
 border-radius:12px;
 font-size:18px;
-font-weight:bold;
+color:white;
+cursor:pointer;
 }
 
-.section{
+.characters{
 padding:60px 20px;
 text-align:center;
 }
 
-.section h2{
-margin-bottom:25px;
+.characters h2{
+margin-bottom:30px;
 font-size:36px;
 }
 
-.grid{
+.cards{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
@@ -76,116 +74,66 @@ gap:20px;
 }
 
 .card{
-background:#1e293b;
-padding:25px;
-border-radius:15px;
+background:#161d35;
+padding:20px;
 width:220px;
+border-radius:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+border-radius:15px;
 }
 
 .card h3{
-margin-bottom:10px;
+margin-top:10px;
+}
+
+.features{
+padding:60px 20px;
+text-align:center;
+}
+
+.feature-box{
+background:#161d35;
+margin:15px auto;
+padding:20px;
+max-width:500px;
+border-radius:15px;
 }
 
 footer{
-padding:30px;
 text-align:center;
-background:#111827;
-color:#94a3b8;
+padding:30px;
+color:#aaa;
 }
-</style>
-</head>
-
-<body>
-
-<nav>
+</style></head><body><nav>
 <div class="logo">🎬 ToonMaker AI</div>
-</nav>
-
-<section class="hero">
-<h1>Bring Your Imagination to Life</h1>
-<p>Create Amazing 2D Animated Videos Without Complex Software</p>
+</nav><section class="hero">
+<h1>Create Amazing 2D Animated Videos</h1>
+<p>Create stories, characters and animation with AI.</p>
 <button class="btn">Create Animation</button>
-</section>
-
-<section class="section">
-<h2>🎭 What Can You Create?</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Cartoon Stories</h3>
-<p>Create fun animated stories.</p>
-</div>
-
-<div class="card">
-<h3>Educational Videos</h3>
-<p>Teach through animation.</p>
-</div>
-
-<div class="card">
-<h3>Mythological Stories</h3>
-<p>Bring legends to life.</p>
-</div>
-
-<div class="card">
-<h3>Funny Animations</h3>
-<p>Create entertaining content.</p>
-</div>
-
-</div>
-</section>
-
-<section class="section">
-<h2>🎨 Character Library</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>👦 Human Characters</h3>
-</div>
-
-<div class="card">
-<h3>👧 Kids Characters</h3>
-</div>
-
-<div class="card">
-<h3>🐶 Animal Characters</h3>
-</div>
-
-<div class="card">
-<h3>👑 Kings & Queens</h3>
-</div>
-
-</div>
-</section>
-
-<section class="section">
-<h2>🤖 AI Tools</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>AI Story Writer</h3>
-</div>
-
-<div class="card">
-<h3>Photo To Cartoon</h3>
-</div>
-
-<div class="card">
-<h3>AI Voice Generator</h3>
-</div>
-
-<div class="card">
-<h3>Story To Video</h3>
-</div>
-
-</div>
-</section>
-
-<footer>
+</section><section class="characters">
+<h2>Characters</h2><div class="cards"><div class="card">
+<img src="boy.png">
+<h3>Boy Character</h3>
+</div><div class="card">
+<img src="man.png">
+<h3>Indian Man</h3>
+</div><div class="card">
+<img src="woman.png">
+<h3>Saree Woman</h3>
+</div></div>
+</section><section class="features">
+<h2>AI Features</h2><div class="feature-box">🎤 AI Voice Generation</div>
+<div class="feature-box">📖 AI Story Writing</div>
+<div class="feature-box">🎬 2D Video Creation</div>
+<div class="feature-box">🖼 Character Generator</div></section><footer>
 © ToonMaker AI
-</footer>
-
-</body>
+</footer></body>
 </html>
